@@ -7,6 +7,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+p {
+    min-width: 14px;
+}
+
 a,
 button {
     transition: all .3s ease-in-out;
@@ -24,7 +28,7 @@ a:hover {
     bottom: 0;
     width: 100%;
     z-index: 100000;
-    background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
+    background: #FFFFFF url("./img/pageload-spinner.gif") no-repeat center center;
 }
 
 .bloc {
@@ -50,6 +54,12 @@ a:hover {
 
 .bloc-md {
     padding: 50px;
+}
+
+.presentation {
+    font-size: 22px;
+    max-width: 550px;
+    margin: auto;
 }
 
 .bloc-sm {
@@ -133,7 +143,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: rgba(255, 255, 255, 0.785);
 }
 
 .d-bloc .a-btn:hover,
@@ -269,12 +279,34 @@ a:hover {
 }
 
 .voffset-lg {
-    margin-top: 80px;
+    margin-top: 40px;
+}
+
+.quote {
+    font-size: 20px;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.quote-client {
+    font-size: 18px;
+}
+
+#portfolio {
+    font-size: 22px;
+    max-width: 450px;
+    margin: auto;
+    color: #333333;
 }
 
 .row-no-gutters {
     margin-right: 0;
     margin-left: 0;
+}
+
+.row {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .row.row-no-gutters > [class^="col-"],
@@ -284,12 +316,17 @@ a:hover {
 }
 
 #bloc-1-hero h1 {
-    font-size: 32px;
+    font-size: 34px;
 }
 
 .navbar {
     margin-bottom: 0;
+    padding: 0;
     z-index: 1;
+}
+
+.navbar img {
+    height: 60px;
 }
 
 .navbar-brand {
@@ -325,7 +362,7 @@ a:hover {
 .nav > li {
     float: left;
     margin-top: 4px;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .navbar-nav .open .dropdown-menu > li > a {
@@ -476,7 +513,7 @@ button {
 }
 
 .icon-md {
-    font-size: 30px!important;
+    font-size: 36px!important;
 }
 
 .icon-lg {
@@ -503,6 +540,11 @@ button {
 
 .panel-rd .panel-footer {
     border-radius: 0 0 29px 29px;
+}
+
+.contact-form {
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .form-control {
@@ -543,6 +585,7 @@ a[data-lightbox]:hover::before {
     width: 50px;
     height: 50px;
     margin-left: -25px;
+    padding-top: 3px;
     border-radius: 50%;
     background: rgba(0, 0, 0, .6);
     color: #FFF;
@@ -572,7 +615,7 @@ a[data-lightbox]:hover img {
 }
 
 #lightbox-modal .modal-dialog img {
-    max-height: 90vh;
+    height: 40vh;
     margin: 0 auto;
 }
 
@@ -596,8 +639,8 @@ a[data-lightbox]:hover img {
     background: rgba(0, 0, 0, .5);
     border: none;
     line-height: 30px;
-    padding: 0 9px 5px;
-    opacity: 0.3;
+    padding: 2px 9px;
+    opacity: 0.8;
 }
 
 .close-lightbox:hover,
@@ -616,7 +659,7 @@ a[data-lightbox]:hover img {
     position: absolute;
     top: 45%;
     z-index: 1;
-    opacity: 0.4;
+    opacity: 0.5;
 }
 
 .next-lightbox {
@@ -639,16 +682,13 @@ a[data-lightbox]:hover img {
     background: none;
 }
 
-h1,
-h2,
 h3,
 h4,
 h5,
 h6,
 p,
 label,
-.btn,
-a {
+.btn {
     font-family: "helvetica";
     font-weight: 400;
     color: #575757!important;
@@ -677,7 +717,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 16px;
 }
 
 .tight-width-whitespace {
@@ -707,6 +747,7 @@ p {
 h2 {
     font-size: 22px;
     line-height: 1.4em;
+    color: white;
 }
 
 h3 {
@@ -718,12 +759,8 @@ h3 {
 
 .med-width-whitespace {
     max-width: 800px;
-    margin: auto auto auto auto;
+    margin: 30px auto;
     box-shadow: 0px 0px 0px #000000;
-}
-
-h1 {
-    color: #333333!important;
 }
 
 h4 {
@@ -753,7 +790,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(87, 78, 53, 0.7);
     padding: 40px 40px 40px 40px;
 }
 
@@ -771,20 +808,21 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #364577;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    position: relative;
+    color: white!important;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #364577;
     color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
+    background: #5870c1!important;
     color: #FFFFFF!important;
 }
 
@@ -793,7 +831,7 @@ h4 {
 }
 
 .ltc-white:hover {
-    color: #cccccc!important;
+    color: #96adfa!important;
 }
 
 .ltc-atomic-tangerine {
@@ -810,19 +848,19 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg.png");
+    background-image: url("./img/dots-bg.png");
 }
 
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
+    background-image: url("./img/lines-h2-bg.png");
 }
 
 .bg-banniere {
-    background-image: url("img/agence-la-panthere.jpg");
+    background-image: url("./img/la_panthere_bg_banner_top_bottom.webp");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("./img/la_panthere_img_presentation.webp");
 }
 
 @media (max-width: 1024px) {
@@ -894,7 +932,6 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    h1,
     h2,
     h3,
     h4,
@@ -916,6 +953,8 @@ h4 {
     .navbar.row {
         margin-left: 0;
         margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
     .site-navigation {
         position: inherit;
@@ -962,7 +1001,7 @@ h4 {
         box-shadow: none;
     }
     .navbar-brand img {
-        max-height: 40px;
+        max-height: 50px;
         width: auto;
     }
     .nav-invert .navbar-header {
@@ -981,6 +1020,10 @@ h4 {
     .bloc-xl,
     .bloc-lg {
         padding: 40px 0;
+    }
+    .row {
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .bloc-sm,
     .bloc-md {
@@ -1005,10 +1048,10 @@ h4 {
         margin-top: 5px;
     }
     .voffset-md {
-        margin-top: 20px;
+        margin-top: 15px;
     }
     .voffset-lg {
-        margin-top: 30px;
+        margin-top: 15px;
     }
     form {
         padding: 5px;
