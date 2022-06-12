@@ -545,8 +545,12 @@ button {
 }
 
 .contact-form {
+    margin-top:0;
     font-size: 20px;
     font-weight: 700;
+    font-family: helvetica;
+    color: #575757!important;
+    text-transform: initial;
 }
 
 .form-control {
