@@ -7,7 +7,7 @@ RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
 
 # Cache de fichiers
 <FilesMatch "\.(jpg|png|svg|webp|html|css|js|php)$">
-Header set Cache-Control "public, max-age=3600"
+Header set Cache-Control "public, max-age=31104000"
 </FilesMatch>
 
 # Empêcher l'accès au fichier .htaccess
