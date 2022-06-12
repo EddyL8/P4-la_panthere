@@ -60,6 +60,9 @@ a:hover {
     font-size: 22px;
     max-width: 550px;
     margin: auto;
+    font-family: helvetica;
+    font-weight: 500;
+    color: #575757!important;
 }
 
 .bloc-sm {
